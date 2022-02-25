@@ -3,19 +3,27 @@ package com.example.shuttledrivegroup1.landingpage
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils.replace
+import androidx.fragment.app.add
+import androidx.fragment.app.commit
+import androidx.fragment.app.replace
 import com.example.shuttledrivegroup1.R
 import com.example.shuttledrivegroup1.databinding.ActivityMainBinding
+import com.example.shuttledrivegroup1.ui.BookRideFragment
 import com.example.shuttledrivegroup1.ui.HomeFragment
+import com.example.shuttledrivegroup1.ui.ProfileFragment
+import com.example.shuttledrivegroup1.ui.RideHistoryFragment
 
 class LandingPageActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         supportFragmentManager.commit {
-            add<HomeFragment>
+            add<HomeFragment>(R.id.container,null,null)
         }
 
         binding.navigation.setOnNavigationItemSelectedListener {
@@ -34,36 +42,26 @@ class LandingPageActivity : AppCompatActivity() {
 
     }
 
-    private fun goToBookRideFragment(): Boolean {
+    private fun goToProfileFragment(): Boolean {
         supportFragmentManager.commit {
-            replace<SettingFragment>(R.id.container, null, null)
+            replace<ProfileFragment>(R.id.container, null, null)
         }
 
         return true
-
     }
 
     private fun goToRideHistoryFragment(): Boolean {
         supportFragmentManager.commit {
-            replace<SettingFragment>(R.id.container, null, null)
+            replace<RideHistoryFragment>(R.id.container, null, null)
         }
 
         return true
 
     }
 
-    private fun goToSettingFragment(): Boolean {
+    private fun goToBookRideFragment(): Boolean {
         supportFragmentManager.commit {
-            replace<SettingFragment>(R.id.container, null, null)
-        }
-
-        return true
-
-    }
-
-    private fun goToProfileFragment(): Boolean {
-        supportFragmentManager.commit {
-            replace<ProfileFragment>(R.id.container, null, null)
+            replace<BookRideFragment>(R.id.container, null, null)
         }
 
         return true
@@ -76,5 +74,4 @@ class LandingPageActivity : AppCompatActivity() {
 
         return true
     }
-
 }
