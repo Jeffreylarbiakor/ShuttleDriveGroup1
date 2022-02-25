@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ShuttleDriveGroup1">
         <activity
+            android:name=".data.AdminLogin"
+            android:exported="false" />
+        <activity
+            android:name=".data.AdminSignUp"
+            android:exported="false" />
+
+        <activity
+            android:name=".data.UserSignUp"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

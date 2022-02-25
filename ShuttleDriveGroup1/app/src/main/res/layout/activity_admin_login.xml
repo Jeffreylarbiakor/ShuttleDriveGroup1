@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".data.AdminLogin">
 
 
     <ImageView
-        android:id="@+id/bus_logo"
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +26,7 @@
         android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bus_logo" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/password"
@@ -48,33 +48,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
+
     <TextView
         android:id="@+id/forgot_password"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/login"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="Forgot password?"
         android:gravity="center"
-        android:text="Forgot password?"/>
-    <TextView
-        android:id="@+id/admin_login"
-        android:layout_width="160dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/login"
         app:layout_constraintEnd_toEndOf="parent"
-        android:gravity="center"
-        android:text="Admin login"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
 
-    <TextView
-        android:id="@+id/signUp"
-        android:layout_width="160dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Sign up"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/forgot_password" />
 
 
 
