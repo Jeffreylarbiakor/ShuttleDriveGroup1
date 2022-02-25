@@ -10,12 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ShuttleDriveGroup1">
         <activity
+            android:name=".landingpage.LandingPageActivity"
+            android:exported="false" />
+        <activity
             android:name=".data.AdminLogin"
             android:exported="false" />
         <activity
             android:name=".data.AdminSignUp"
             android:exported="false" />
-
         <activity
             android:name=".data.UserSignUp"
             android:exported="false" />
