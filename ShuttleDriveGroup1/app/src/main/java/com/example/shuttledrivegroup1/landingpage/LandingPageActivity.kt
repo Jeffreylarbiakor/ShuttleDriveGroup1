@@ -17,8 +17,8 @@ class LandingPageActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        supportFragmentManager.commit {
-            add<HomeFragment>(R.id.container, null, null)
-        }
+//        supportFragmentManager.commit {
+//            add<HomeFragment>(R.id.container, null, null)
+//        }
     }
 }

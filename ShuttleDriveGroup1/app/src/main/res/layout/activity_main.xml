@@ -42,7 +42,7 @@
         app:layout_constraintTop_toBottomOf="@+id/username" />
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/login_main"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:text="Login"
@@ -53,7 +53,7 @@
         android:id="@+id/forgot_password"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/login_main"
         app:layout_constraintStart_toStartOf="parent"
         android:gravity="center"
         android:text="Forgot password?"/>
@@ -61,7 +61,7 @@
         android:id="@+id/admin_login"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/login_main"
         app:layout_constraintEnd_toEndOf="parent"
         android:gravity="center"
         android:text="Admin login"/>
