@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.TextView
 import com.example.shuttledrivegroup1.data.AdminLogin
 import com.example.shuttledrivegroup1.data.UserSignUp
+import com.example.shuttledrivegroup1.landingpage.LandingPageActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         val loginBtn = findViewById<Button>(R.id.login)
 
         loginBtn.setOnClickListener(){
-            val intent = Intent(this, UserSignUp::class.java)
+            val intent = Intent(this, LandingPageActivity::class.java)
             startActivity(intent)
         }
 
